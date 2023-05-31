@@ -1,0 +1,551 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul, ol, li {
+    list-style: none;
+}
+
+body{
+    background-color: #FE797E;
+    position: relative;
+    display: grid;
+    grid-template-rows: 115px 1fr 225px;
+    height: 100vh;
+
+}
+
+header{
+    display: grid;
+    grid-template-columns: 70px 1fr 2fr 70px;
+    gap: 3px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    margin: 1.56rem 1rem 0px 1rem;
+}
+
+.hotbar{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.text{
+    display: flex;
+    color: white; 
+    text-overflow: ellipsis;
+    font-family: 'Cherry Bomb One', cursive;
+    line-height: 19px;
+    font-size: 30px;
+    letter-spacing: 0.05em;
+    gap: 110px;
+    width: 10px;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+.hot::after{
+    content: '';
+    display: block;
+    width: auto;
+    height: 5px;
+    background-color: rgb(255, 67, 92);
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateY(1.75rem);
+}
+
+.hot:hover::after{
+    opacity: 1;
+}
+
+.telefone{
+    font-family: 'Cherry Bomb One', cursive;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    color: #F5F5F5;
+}
+
+.fale_conosco{
+    display:flex;
+    position: relative;
+    justify-content: flex-end;
+    gap: 30px;
+    font-family: 'Cherry Bomb One', cursive;
+    white-space: nowrap;
+    top: 2rem;
+    right: 10rem;
+    color: #F5F5F5;
+}
+
+.logo{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    left: 70rem;
+    top: 3rem;
+}
+
+img[alt~=logo]{
+    width: 13rem;
+}
+
+
+main{
+    display: grid;
+    grid-template-columns: auto auto 84px;
+    align-items: center;
+}
+
+
+.fundo{
+    position: absolute;
+    z-index: -1;
+    top: 16.3rem;
+    left: 29%;
+}
+
+
+svg[alt~=fundo]{
+    width: 160vh;
+}
+
+
+.ponta_fundo{
+    position: absolute;
+    z-index: -1;
+    top: 3.3rem;
+    left: -37%;
+}
+
+
+.cupk_cima{
+    position: absolute;
+    height: 352.16px;
+    left: 111rem;
+    top: 14rem;
+}
+
+img[alt~=cupk_cima]{
+    width: 18rem;
+}
+
+.cupk_baixo{
+    position: absolute;
+    height: 313.29px;
+    left: 96rem;
+    top: 27rem;
+    transform: matrix(1, 0.09, -0.08, 1, 0, 0);
+}
+
+img[alt~=cupk_baixo]{
+    width: 15rem;
+}
+
+.texto{
+    position: absolute;
+    width: 674px;
+    height: 140px;
+    left: 16rem;
+    top: 22rem;
+    font-family: 'Cherry Bomb One', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+
+#preco{
+    color: #E2485D;
+}
+
+.entrega{
+    position: absolute;
+    width: 424px;
+    height: 52px;
+    left: 16rem;
+    top: 28rem;
+    font-family: 'Cherry Bomb one', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 24px;
+    color: #F5F5F5;
+
+}
+
+
+.button {
+  background-color: #E2485D;
+  border-radius: 70px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Cherry Bomb one', cursive;
+  font-size: 24px;
+  font-weight: 500;
+  height: 50px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  top: 6rem;
+  width: 19rem;
+  left: 16rem;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #E2485D;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    padding: 64px 40px;
+}
+
+.sociais{
+    display: flex;
+    position: absolute;
+    gap: 14rem;
+    top: 47rem;
+}
+
+#alinhar{
+    padding-top: 50px;
+}
+
+#promotion{
+    padding-top: 20px;
+}
+
+
+.nav{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.textss{
+    display: flex;
+    position: absolute;
+    color: #FE797E; 
+    text-overflow: ellipsis;
+    font-family: 'Cherry Bomb One', cursive;
+    line-height: 19px;
+    font-size: 30px;
+    letter-spacing: 0.05em;
+    gap: 14rem;
+    width: 10px;
+    align-items: flex-start;
+    cursor: pointer;
+    top: 56rem;
+    left: 29rem;
+}
+
+
+.nave::after{
+    content: '';
+    display: block;
+    width: auto;
+    height: 5px;
+    background-color: rgb(255, 67, 92);
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateY(1.75rem);
+}
+
+.nave:hover::after{
+    opacity: 1;
+}
+
+@media(max-width: 768px){
+    body{
+        background-color: #FE797E;
+        position: relative;
+        display: grid;
+        grid-template-rows: 115px 1fr 225px;
+        height: 100vh;
+    
+    }
+    
+    header{
+        display: grid;
+        grid-template-columns: 70px 1fr 2fr 70px;
+        gap: 3px;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 2rem;
+        margin: 1.56rem 1rem 0px 1rem;
+    }
+    
+    .hotbar{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    
+    .text{
+        display: flex;
+        color: white; 
+        text-overflow: ellipsis;
+        font-family: 'Cherry Bomb One', cursive;
+        line-height: 19px;
+        font-size: 30px;
+        letter-spacing: 0.05em;
+        gap: 110px;
+        width: 10px;
+        align-items: flex-end;
+        cursor: pointer;
+    }
+    
+    .hot::after{
+        content: '';
+        display: block;
+        width: auto;
+        height: 5px;
+        background-color: rgb(255, 67, 92);
+        border-radius: 10px;
+        opacity: 0;
+        transform: translateY(1.75rem);
+    }
+    
+    .hot:hover::after{
+        opacity: 1;
+    }
+    
+    .telefone{
+        font-family: 'Cherry Bomb One', cursive;
+        display: flex;
+        justify-content: flex-end;
+        gap: 30px;
+        color: #F5F5F5;
+    }
+    
+    .fale_conosco{
+        display:flex;
+        position: relative;
+        justify-content: flex-end;
+        gap: 30px;
+        font-family: 'Cherry Bomb One', cursive;
+        white-space: nowrap;
+        top: 2rem;
+        right: 10rem;
+        color: #F5F5F5;
+    }
+    
+    .logo{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        left: 70rem;
+        top: 3rem;
+    }
+    
+    img[alt~=logo]{
+        width: 13rem;
+    }
+    
+    
+    main{
+        display: grid;
+        grid-template-columns: auto auto 84px;
+        align-items: center;
+    }
+    
+    
+    .fundo{
+        position: absolute;
+        z-index: -1;
+        top: 16.3rem;
+        left: 29%;
+    }
+    
+    
+    svg[alt~=fundo]{
+        width: 160vh;
+    }
+    
+    
+    .ponta_fundo{
+        position: absolute;
+        z-index: -1;
+        top: 3.3rem;
+        left: -37%;
+    }
+    
+    
+    .cupk_cima{
+        position: absolute;
+        height: 352.16px;
+        left: 111rem;
+        top: 14rem;
+    }
+    
+    img[alt~=cupk_cima]{
+        width: 18rem;
+    }
+    
+    .cupk_baixo{
+        position: absolute;
+        height: 313.29px;
+        left: 96rem;
+        top: 27rem;
+        transform: matrix(1, 0.09, -0.08, 1, 0, 0);
+    }
+    
+    img[alt~=cupk_baixo]{
+        width: 15rem;
+    }
+    
+    .texto{
+        position: absolute;
+        width: 674px;
+        height: 140px;
+        left: 16rem;
+        top: 22rem;
+        font-family: 'Cherry Bomb One', cursive;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 40px;
+        color: #FFFFFF;
+    }
+    
+    #preco{
+        color: #E2485D;
+    }
+    
+    .entrega{
+        position: absolute;
+        width: 424px;
+        height: 52px;
+        left: 16rem;
+        top: 28rem;
+        font-family: 'Cherry Bomb one', cursive;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 24px;
+        color: #F5F5F5;
+    
+    }
+    
+    
+    .button {
+      background-color: #E2485D;
+      border-radius: 70px;
+      border-style: none;
+      box-sizing: border-box;
+      color: #FFFFFF;
+      cursor: pointer;
+      display: inline-block;
+      font-family: 'Cherry Bomb one', cursive;
+      font-size: 24px;
+      font-weight: 500;
+      height: 50px;
+      line-height: 20px;
+      list-style: none;
+      margin: 0;
+      outline: none;
+      padding: 10px 16px;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      transition: color 100ms;
+      vertical-align: baseline;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      top: 6rem;
+      width: 19rem;
+      left: 16rem;
+    }
+    
+    .button:hover,
+    .button:focus {
+      background-color: #E2485D;
+    }
+    
+    
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+        padding: 64px 40px;
+    }
+    
+    .sociais{
+        display: flex;
+        position: absolute;
+        gap: 14rem;
+        top: 47rem;
+    }
+    
+    #alinhar{
+        padding-top: 50px;
+    }
+    
+    #promotion{
+        padding-top: 20px;
+    }
+    
+    
+    .nav{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    
+    .textss{
+        display: flex;
+        position: absolute;
+        color: #FE797E; 
+        text-overflow: ellipsis;
+        font-family: 'Cherry Bomb One', cursive;
+        line-height: 19px;
+        font-size: 30px;
+        letter-spacing: 0.05em;
+        gap: 14rem;
+        width: 10px;
+        align-items: flex-start;
+        cursor: pointer;
+        top: 56rem;
+        left: 29rem;
+    }
+    
+    
+    .nave::after{
+        content: '';
+        display: block;
+        width: auto;
+        height: 5px;
+        background-color: rgb(255, 67, 92);
+        border-radius: 10px;
+        opacity: 0;
+        transform: translateY(1.75rem);
+    }
+    
+    .nave:hover::after{
+        opacity: 1;
+    }
+}
