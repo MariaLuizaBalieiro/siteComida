@@ -288,7 +288,6 @@ footer{
         height: 100vh;
     
     }
-    
     header{
         display: grid;
         grid-template-columns: 70px 1fr 2fr 70px;
@@ -334,23 +333,12 @@ footer{
     }
     
     .telefone{
-        font-family: 'Cherry Bomb One', cursive;
-        display: flex;
-        justify-content: flex-end;
-        gap: 30px;
-        color: #F5F5F5;
+        display: none;
+
     }
     
     .fale_conosco{
-        display:flex;
-        position: relative;
-        justify-content: flex-end;
-        gap: 30px;
-        font-family: 'Cherry Bomb One', cursive;
-        white-space: nowrap;
-        top: 2rem;
-        right: 10rem;
-        color: #F5F5F5;
+        display:none;
     }
     
     .logo{
